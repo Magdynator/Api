@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "npm run development",
+        "development": "webpack --progress --config=webpack.config.js",
+        "production": "webpack --progress --config=webpack.config.js --mode production"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
@@ -13,5 +15,8 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^6.0"
+    },
+    "dependencies": {
+        "laravel-mix": "^6.0.49"
     }
 }
